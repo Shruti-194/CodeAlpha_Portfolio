@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Personal Portfolio - Resume</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+  }
+  a {
+    color: #ffd369;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /* Container */
+  .container {
+    max-width: 350px;
+    height: 600px;
+    background: #1a1a2e;
+    margin: 20px auto;
+    border-radius: 14px;
+    padding: 20px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    overflow-y: auto;
+  }
+  /* Scrollbar for container */
+  .container::-webkit-scrollbar {
+    width: 6px;
+  }
+  .container::-webkit-scrollbar-track {
+    background: #111122;
+    border-radius: 10px;
+  }
+  .container::-webkit-scrollbar-thumb {
+    background-color: #764ba2;
+    border-radius: 10px;
+  }
+
+  /* Heading styles */
+  h1, h2 {
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 28px;
+    color: #ffd369;
+    text-align: center;
+  }
+  h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #764ba2;
+    padding-bottom: 4px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+  }
+  /* Personal Info */
+  .personal-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .personal-info p {
+    margin: 4px 0;
+    font-weight: 500;
+  }
+  .personal-info .email,
+  .personal-info .phone {
+    font-style: italic;
+    color: #bdbdbd;
+  }
+
+  /* About section */
+  .about {
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+  /* Experience and skills */
+  .experience-list,
+  .skills-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .experience-list li {
+    margin-bottom: 12px;
+  }
+  .experience-list .job-title {
+    font-weight: 600;
+    color: #ffd369;
+  }
+  .experience-list .company {
+    font-style: italic;
+    color: #bdbdbd;
+    font-size: 0.9rem;
+  }
+  .experience-list .duration {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 2px;
+  }
+  .skills-list li {
+    background: #764ba2;
+    display: inline-block;
+    margin: 4px 6px 6px 0;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #555;
+  }
+
+  /* Responsive */
+  @media (max-width: 375px) {
+    .container {
+      max-width: 320px;
+      height: 600px;
+      padding: 18px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Personal portfolio resume">
+    <header class="personal-info">
+      <h1> SHRUTI BAGADE</h1>
+      <p>Full Stack Developer</p>
+      <p class="email" harshika@.com</p>
+      <p class="phone">+1 (555) 123-4567</p>
+      <p><a href="https://www.linkedin.com/in/harshika" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+    </header>
+
+    <section class="about" aria-label="About me">
+      <h2>About Me</h2>
+      <p>Passionate intern with 1+ years of experience specializing in building performant web applications and scalable APIs. Adept at problem-solving, collaborating with cross-functional teams, and continuously learning new technologies.</p>
+    </section>
+
+    <section class="experience" aria-label="Experience">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <div class="job-title">Software developer</div>
+          <div class="company">Tech solution.in.</div>
+          <div class="duration">2024 - Present</div>
+          <p>Lead development team working on scalable SaaS platform using React, Node.js, and AWS. Mentored junior developers and improved application performance by 30%.</p>
+        </li>
+        <li>
+          <div class="job-title">Front end developer</div>
+          <div class="company">WebStart LLC</div>
+          <div class="duration">2024 - 2025</div>
+          <p>Developed interactive front-end components and RESTful APIs using Angular and Express. Collaborated with designers to implement UI/UX best practices.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="expertise" aria-label="Expertise and skills">
+      <h2>Expertise & Skills</h2>
+      <ul class="skills-list" aria-label="List of technical skills and expertise">
+        <li>JavaScript / ES6+</li>
+        <li>React & Redux</li>
+        <li>Node.js & Express</li>
+        <li>TypeScript</li>
+        <li>RESTful APIs</li>
+        <li>HTML5 & CSS3</li>
+        <li>SQL & NoSQL Databases</li>
+        <li>Git & GitHub</li>
+        <li>CI/CD & Docker</li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2025 Shruti. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
